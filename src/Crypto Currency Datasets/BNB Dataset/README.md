@@ -1,5 +1,5 @@
 
-# Binance Coin Price Prediction
+# Binance Coin (BNB) Analysis
 <img src="https://cryptoholics.com/wp-content/uploads/Binance-Coin.png">
 
 ## Overview
