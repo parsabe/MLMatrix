@@ -3,7 +3,7 @@ Welcome to the Tech Insights Repository! This repository features four in-depth 
 
 ## Projects
 
-1. BNB Dataset
+1. Crypto Currency Datasets
 
 
 
