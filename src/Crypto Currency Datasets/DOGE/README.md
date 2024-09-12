@@ -1,5 +1,5 @@
 
-# Binance Coin Price Prediction
+# DOGE Coin Analysis
 <img src="https://i.ytimg.com/vi/4BQ-yM-joH4/maxresdefault.jpg">
 
 ## Overview
