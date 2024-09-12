@@ -9,11 +9,11 @@ Welcome to the Tech Insights Repository! This repository features four in-depth 
 
 ## Contributing
 
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details.
+We welcome contributions! 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the MIT License. 
 
 
 Thank you for visiting our repository! If you have any questions or feedback, please open an issue or reach out directly.This Repository includes all of Data Analysis and Data Science Projects that I have done or am going to do.
