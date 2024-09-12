@@ -1,5 +1,5 @@
 
-# Binance Coin Price Prediction
+# Bitcoin Analysis
 <img src="https://images4.alphacoders.com/100/1002783.png">
 
 
