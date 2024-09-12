@@ -1,4 +1,4 @@
-# PARSA-Data-Science-Projects
+# MLMatrix
 Welcome to the Tech Insights Repository! This repository features four in-depth articles covering a range of cutting-edge technologies and their applications. Explore the fascinating intersections of my data science projects.
 
 ## Projects
