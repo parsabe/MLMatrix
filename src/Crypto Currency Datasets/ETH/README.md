@@ -1,6 +1,6 @@
 
-# Binance Coin Price Prediction
-<img src="https://images6.alphacoders.com/134/1341130.png">
+# ETH Analysis
+<img src='https://wallpapers.com/images/hd/ethereum-snowy-night-my4f0fnnj7q6g5jd.jpg'>
 
 ## Overview
 
