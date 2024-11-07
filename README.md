@@ -4,6 +4,7 @@ Welcome to the Tech Insights Repository! This repository features four in-depth 
 ## Projects
 
 1. Crypto Currency Datasets
+2. Scraper
 
 
 
