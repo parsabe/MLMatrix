@@ -4,7 +4,7 @@ Welcome to the Tech Insights Repository! This repository features four in-depth 
 ## Projects
 
 1. <a href='https://github.com/parsabe/MLMatrix/tree/master/src/Crypto%20Currency%20Datasets'>Crypto Currency Datasets</a>
-2. <a href='https://github.com/parsabe/MLMatrix/tree/master/src/Scraper'>Scraper (NEW)</a>
+2. <a href='https://github.com/parsabe/MLMatrix/tree/master/src/Scraper'>Scraper</a>
 
 
 
