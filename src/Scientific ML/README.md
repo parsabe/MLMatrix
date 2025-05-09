@@ -1,9 +1,9 @@
 
-# Bitcoin Basic Prediction Pipeline
+# Scientific ML
 
 **Overview:**
 
-A lightweight end-to-end pipeline to forecast next-day Bitcoin returns and evaluate a simple trading strategy.
+A lightweight end-to-end BTC pipeline to forecast next-day Bitcoin returns and evaluate a simple trading strategy.
 
 ## Requirements
 
