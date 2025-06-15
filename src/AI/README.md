@@ -1,7 +1,7 @@
-# AI Course
+# AI
 
 ## Contents
-The course provides the German version of the slides and the corresponding codes. The materials are available in the repository.
+These material are a part of my investigation and research on AI.
 
 ## Contribution
 Contributions are welcome! Please follow these steps:
