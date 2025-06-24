@@ -1,4 +1,5 @@
-# Machine Learning Project 2
+# Random Forest Regressor Optimization
+
 
 A Jupyter notebook–based pipeline for regression on tabular data, extended with advanced preprocessing, model tuning, and evaluation.
 
@@ -9,42 +10,6 @@ A Jupyter notebook–based pipeline for regression on tabular data, extended wit
 
 ## Code Overview
 
-1. **Exploratory Data Analysis (EDA)**  
-   - Display first rows, summary statistics, and missing-value counts  
-   - Feature distributions with histograms and boxplots  
-   - Correlation heatmap (numeric features only)
-
-2. **Preprocessing**  
-   - One-hot encoding of categorical columns  
-   - Imputation of missing values with `SimpleImputer`  
-   - Min–max scaling of all features (excluding target)
-
-3. **Train/Test Split**  
-   - 80/20 random split with a fixed seed for reproducibility
-
-4. **Baseline Metrics**  
-   - Dummy regressor (mean strategy) as a performance floor  
-   - Evaluated via RMSE, MAE, and R²
-
-5. **Random Forest Regressor**  
-   - **RandomizedSearchCV** over `n_estimators`, `max_depth`, `min_samples_split`, `min_samples_leaf`, and `max_features`  
-   - **GridSearchCV** refinement around the best randomized results  
-   - Final evaluation on the hold-out set
-
-6. **XGBoost Regressor**  
-   - **RandomizedSearchCV** on common hyperparameters  
-   - **True early stopping** via the native `xgboost.train()` API and `DMatrix`, halting after 30 rounds without improvement  
-   - **GridSearchCV** refinement around the best randomized results  
-   - Evaluation of each stage (randomized, early-stop, grid) with RMSE, MAE, and R²
-
-7. **Model Comparison & Diagnostics**  
-   - Tabulated comparison of all models and tuning stages  
-   - Learning curves to diagnose under- or over-fitting  
-   - Validation curves for key hyperparameters  
-   - Top-20 feature-importance plots  
-   - Residuals vs. predicted scatter plots
-
-## Improvements
 
 This repository was originally developed by [@anitatehrani](https://github.com/anitatehrani). The following features have been added to enhance the workflow:
 
@@ -52,7 +17,7 @@ This repository was originally developed by [@anitatehrani](https://github.com/a
 - Robust **preprocessing**: encoding, imputation, scaling  
 - Standardized **train/test splitting** with reproducible random seed  
 - **Baseline** DummyRegressor metrics for context  
-- Dual-stage **Random Forest** tuning: broad randomized search + focused grid search  
+- Dual-stage **Random Forest** tuning: broad **randomized search** + focused **grid search**  
 - Full **XGBoost** workflow:  
   - Randomized search  
   - Early stopping via native API  
@@ -79,12 +44,7 @@ This repository was originally developed by [@anitatehrani](https://github.com/a
 - xgboost  
 - matplotlib  
 - seaborn
-
-## Report
-
-- **Canva Design:**  
-  [View on Canva](https://www.canva.com/design/DAF_gFQy9cU/QWdyZUKmBciXM0MElTQTUg/view?utm_content=DAF_gFQy9cU&utm_campaign=designshare&utm_medium=link&utm_source=editor)
-
+  
 ## Contributors
 
 - This project is being implemented by [@anitatehrani](https://github.com/anitatehrani)  
