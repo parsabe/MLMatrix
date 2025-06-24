@@ -87,7 +87,6 @@ This repository was originally developed by [@anitatehrani](https://github.com/a
 
 ## Contributors
 
-- [@anitatehrani](https://github.com/anitatehrani)  
-- [@mohiabd99](https://github.com/Mohiabd99)  
+- This project is being implemented by [@anitatehrani](https://github.com/anitatehrani)  
 - Implementation enhancements by **Parsa Besharat** (this fork)
 
