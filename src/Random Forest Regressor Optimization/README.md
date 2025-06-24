@@ -47,6 +47,5 @@ This repository was originally developed by [@anitatehrani](https://github.com/a
   
 ## Contributors
 
-- This project is being implemented by [@anitatehrani](https://github.com/anitatehrani)  
-- Implementation enhancements by **Parsa Besharat** (this fork)
+- This project is mainly being implemented by [@anitatehrani](https://github.com/anitatehrani)  
 
