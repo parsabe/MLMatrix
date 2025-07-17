@@ -12,7 +12,7 @@ Welcome to the Tech Insights Repository! This repository features four in-depth 
 5. <a href='https://github.com/parsabe/MLMatrix/tree/master/src/AI'>AI</a>
 6. <a href='https://github.com/parsabe/MLMatrix/tree/master/src/High%20Performance%20Computingn'>High Performance Computing</a>
 7. <a href='https://github.com/parsabe/MLMatrix/tree/master/src/Introduction%20of%20machine%20learning'>Machine Learning and Big Data</a>
-8. <a href='https://github.com/parsabe/MLMatrix/tree/master/src/Mathematical%20Machine%20Learning'>Mamthematical Machine Learning</a>
+8. <a href='https://github.com/parsabe/MLMatrix/tree/master/src/Mathematical%20Machine%20Learning'>Mathematical Machine Learning</a>
 9. <a href='https://github.com/parsabe/MLMatrix/tree/master/src/Methods%20of%20Machine%20Learning'>Methods of Machine Learning</a>
 
 
