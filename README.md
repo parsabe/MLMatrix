@@ -16,7 +16,6 @@ Welcome to the Tech Insights Repository! This repository features four in-depth 
 9. <a href='https://github.com/parsabe/MLMatrix/tree/master/src/Methods%20of%20Machine%20Learning'>Methods of Machine Learning</a>
 
 
-
 ## Contributing
 
 We welcome contributions! 
