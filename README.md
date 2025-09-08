@@ -17,7 +17,6 @@ Welcome to the Tech Insights Repository! This repository features four in-depth 
 
 ## Contributing
 
-
 We welcome contributions! 
 
 ## License
