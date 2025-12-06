@@ -1,10 +1,8 @@
-
-
 <h1>C++ Code</h1>
-<pre>
-#include <iostream>
-#include <cmath>
-#include <omp.h>
+
+<pre><code>#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+#include &lt;omp.h&gt;
 
 double g(double x_val) {
     return 1.0 / (1.0 + std::pow(x_val, 2));
@@ -18,7 +16,7 @@ double trapzoid(int intervals, int thread_num) {
     double accum = 0.5 * (g(xstart) + g(xend));
 
 #pragma omp parallel for reduction(+:accum) num_threads(thread_num)
-    for (int idx = 1; idx < intervals; ++idx) {
+    for (int idx = 1; idx &lt; intervals; ++idx) {
         double x_local = xstart + idx * step;
         accum += g(x_local);
     }
@@ -38,7 +36,7 @@ double simpson(int intervals, int thread_num) {
     double total = g(xstart) + g(xend);
 
 #pragma omp parallel for reduction(+:total) num_threads(thread_num)
-    for (int idx = 1; idx < intervals; ++idx) {
+    for (int idx = 1; idx &lt; intervals; ++idx) {
         double x_local = xstart + idx * step;
         if (idx % 2 == 0) {
             total += 2.0 * g(x_local);
@@ -50,7 +48,7 @@ double simpson(int intervals, int thread_num) {
     return total * step / 3.0;
 }
 
-void run_method(const std::string &label,
+void run_method(const std::string &amp;label,
                 bool use_trap,
                 int intervals,
                 const int *thread_list,
@@ -58,10 +56,10 @@ void run_method(const std::string &label,
     double pi_exact = std::acos(-1.0);
     double base_runtime = 0.0;
 
-    std::cout << label << "\n";
-    std::cout << "Intervals: " << intervals << "\n\n";
+    std::cout &lt;&lt; label &lt;&lt; "\n";
+    std::cout &lt;&lt; "Intervals: " &lt;&lt; intervals &lt;&lt; "\n\n";
 
-    for (int i = 0; i < thread_count; ++i) {
+    for (int i = 0; i &lt; thread_count; ++i) {
         int t_current = thread_list[i];
 
         double t_begin = omp_get_wtime();
@@ -84,11 +82,11 @@ void run_method(const std::string &label,
         double abs_diff = std::fabs(pi_approx - pi_exact);
         double speed = base_runtime / elapsed;
 
-        std::cout << "thread: " << t_current << "\n";
-        std::cout << "time: " << elapsed << "\n";
-        std::cout << "speed: " << speed << "\n";
-        std::cout << "pi: " << pi_approx << "\n";
-        std::cout << "error: " << abs_diff << "\n\n";
+        std::cout &lt;&lt; "thread: " &lt;&lt; t_current &lt;&lt; "\n";
+        std::cout &lt;&lt; "time: " &lt;&lt; elapsed &lt;&lt; "\n";
+        std::cout &lt;&lt; "speed: " &lt;&lt; speed &lt;&lt; "\n";
+        std::cout &lt;&lt; "pi: " &lt;&lt; pi_approx &lt;&lt; "\n";
+        std::cout &lt;&lt; "error: " &lt;&lt; abs_diff &lt;&lt; "\n\n";
     }
 }
 
@@ -98,17 +96,21 @@ int main() {
     int thread_choices[cores] = {1, 2, 4, 8, 12};
 
     std::cout.precision(17);
-    std::cout << "Setting up the methods:\n\n";
+    std::cout &lt;&lt; "Setting up the methods:\n\n";
 
     run_method("Trapezoid", true, intervals, thread_choices, cores);
 
-    std::cout << "----------------------------------------\n";
+    std::cout &lt;&lt; "----------------------------------------\n";
 
     run_method("Simpson", false, intervals, thread_choices, cores);
 
     return 0;
 }
-</pre>
+</code></pre>
+
+</body>
+</html>
+
 
 
 <h1>PBS Job Script</h1>
