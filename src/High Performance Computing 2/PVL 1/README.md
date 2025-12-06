@@ -1,3 +1,8 @@
+<img src="https://github.com/parsabe/MLMatrix/blob/master/src/High%20Performance%20Computing%202/PVL%201/task.png">
+<p>
+The absolute errors clearly show that the Trapezoid method delivers an accuracy on the order of 10⁻⁶, while Simpson’s method achieves near machine-precision errors around 10⁻¹⁵. This confirms that Simpson’s rule is significantly more accurate for the same number of intervals, and the error remains stable across all thread counts since parallelism affects runtime, not numerical precision.
+</p>
+
 <h1>C++ Code</h1>
 
 <pre><code>#include &lt;iostream&gt;
@@ -115,7 +120,7 @@ int main() {
 
 <h1>PBS Job Script</h1>
 <pre>
-#!/bin/bash
+
 #PBS -N pvl1-python
 #PBS -q teachingq
 #PBS -l select=1:ncpus=1:mpiprocs=1
@@ -199,9 +204,7 @@ pi: 3.1415926535897927
 error: 4.4408920985006262e-16
 </pre>
 
-<p>
-The absolute errors clearly show that the Trapezoid method delivers an accuracy on the order of 10⁻⁶, while Simpson’s method achieves near machine-precision errors around 10⁻¹⁵. This confirms that Simpson’s rule is significantly more accurate for the same number of intervals, and the error remains stable across all thread counts since parallelism affects runtime, not numerical precision.
-</p>
+
 
 
 </body>
