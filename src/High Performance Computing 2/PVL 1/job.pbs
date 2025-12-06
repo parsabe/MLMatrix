@@ -1,0 +1,11 @@
+#PBS -N first-example
+#PBS -q teachingq
+#PBS -l select=1:ncpus=1:mpiprocs=1
+#PBS -l walltime=00:01:00
+#PBS -o log.out
+#PBS -e log.err
+
+
+cd $PBS_O_WORKDIR
+module load openmpi/gcc/11.4.0/4.1.6
+./main.bin
