@@ -3,6 +3,7 @@
 The absolute errors clearly show that the Trapezoid method delivers an accuracy on the order of 10⁻⁶, while Simpson’s method achieves near machine-precision errors around 10⁻¹⁵. This confirms that Simpson’s rule is significantly more accurate for the same number of intervals, and the error remains stable across all thread counts since parallelism affects runtime, not numerical precision.
 </p>
 
+
 <h1>C++ Code</h1>
 
 <pre><code>#include &lt;iostream&gt;
