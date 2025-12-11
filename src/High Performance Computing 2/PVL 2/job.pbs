@@ -1,0 +1,15 @@
+#PBS -N parsa
+#PBS -q teachingq
+#PBS -l select=1:ncpus=2:mpiprocs=2
+#PBS -l walltime=00:02:00
+#PBS -o log.out
+#PBS -e log.err
+
+
+
+cd $PBS_O_WORKDIR
+
+module load openmpi/gcc/11.4.0/4.1.6
+module load python/gcc/11.4.0/3.11.7
+
+mpiexec python main.py

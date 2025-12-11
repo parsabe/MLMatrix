@@ -1,0 +1,9 @@
+--- Starting Task A (Logic Check) ---
+Task A: Rank 0 successfully completed 50000.
+-------------------------------------
+
+--- Starting Task B (Timing & Measurement) ---
+Task B: Duration for 100000 messages: 0.176818 s
+Task B: Single message latency: 0.001768 milliseconds
+Task B: Single message latency: 1.768183 microseconds
+-------------------------------------
