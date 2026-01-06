@@ -1,0 +1,35 @@
+#PBS -N parsa
+#PBS -q teachingq
+#PBS -l select=1:ncpus=16:mpiprocs=16
+#PBS -l walltime=01:00:00
+#PBS -o log.out
+#PBS -e log.err
+
+cd $PBS_O_WORKDIR
+
+module load openmpi/gcc/11.4.0/4.1.6
+module load python/gcc/11.4.0/3.11.7
+
+
+echo "1 rank:"
+mpiexec -n 1 python main.py 10000
+echo "---------------------------------"
+
+
+echo "2 ranks:"
+mpiexec -n 2 python main.py 10000
+echo "---------------------------------"
+
+
+echo "4 ranks:"
+mpiexec -n 4 python main.py 10000
+echo "---------------------------------"
+
+echo "8 ranks:"
+mpiexec -n 8 python main.py 10000
+echo "---------------------------------"
+
+echo "16 ranks:"
+mpiexec -n 16 python main.py 10000
+echo "---------------------------------"
+
